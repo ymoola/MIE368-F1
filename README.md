@@ -1,42 +1,34 @@
-# MIE368-F1
-
+# F1 Race Predictor Project
 
 ## Overview
+This project focuses on predicting the outcomes of Formula 1 races. The dataset includes information about races, drivers, teams, and various race-related metrics.
 
-This project aims to predict Formula One race positions using Data Science and Machine Learning techniques. The dataset includes historical information about races, drivers, teams, circuits, and race results. The goal is to build a model that accurately predicts a driver's race position based on various features such as driver age, team, grid position, and more.
+## Table of Contents
+1. [Data Collection](#data-collection)
+2. [Data Preprocessing](#data-preprocessing)
+3. [Exploratory Data Analysis (EDA)](#eda)
+4. [Further Data Preprocessing](#further-preprocessing)
+5. [Model Building and Evaluation](#model-building)
+6. [Conclusion](#conclusion)
 
-## Data Collection and EDA
+## Data Collection
+The project begins with collecting data from various CSV files, merging them based on common identifiers, and creating a comprehensive dataset.
 
-### File Merging
-We utilized the Formula One 1950-2023 dataset from Kaggle, merging eight CSV files containing information about circuits, teams, drivers, and race results.
+## Data Preprocessing
+Cleaning and feature engineering are performed on the dataset, including handling missing values, updating team names, and calculating driver ages.
 
-### Feature Engineering
-We performed feature engineering to create relevant features, including driver age, position delta, and driver Did Not Finish (DNF) ratio. This step enhanced our dataset for better prediction capabilities.
+## EDA
+Exploratory Data Analysis is conducted to visualize and understand the distribution of various factors such as driver nationality, age, wins, constructor wins, and DNFs.
 
-### EDA + Feature Selection
-Exploratory Data Analysis (EDA) included visualizations of driver age distribution, relationships between age and wins, and DNFs by circuit. Feature selection involved correlation analysis to include relevant columns in the model.
+## Further Data Preprocessing
+The dataset is prepared for classification models, including one-hot encoding categorical features and scaling numerical features.
 
-## Feature Engineering
+## Model Building and Evaluation
+Several machine learning models, including Random Forest, XGBoost, SVM, KNN, and Logistic Regression, are implemented and evaluated based on training and testing accuracies.
 
-The following features were created during feature engineering:
+## Conclusion
+The project provides insights into the relationships between different variables and aims to predict race outcomes using machine learning models.
 
-- Driver Age
-- Position Delta
-- Driver DNF Ratio
-- Binary features for race wins and podium finishes
-
-## Model Development
-
-We experimented with various machine learning models, including Random Forest, XGBoost, SVM, KNN, and Logistic Regression. The models were evaluated using accuracy metrics, and confusion matrices were plotted to assess performance.
-
-## Next Steps
-
-Our future steps include:
-
-- Further model refinement using hyperparameter tuning and cross-validation.
-- Integration of weather data to enhance feature space.
-- Feature importance tests to avoid overfitting.
-- Development of an optimization model for sports betting and fantasy league use cases.
 
 ## Getting Started
 
